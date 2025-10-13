@@ -80,15 +80,15 @@ class RetrieveData:
 
         return result_data
 
-if __name__ == "__main__":
-    db = RetrieveData()
-    db.connect()
-    db.user_input = "what is programming"
-    ques_ret = db.retrieve_questions()
-    ans_ret = db.retrieve_answers()
-    db.close()
-    concat_qa = db.concat(ques_ret, ans_ret)
-    pre_dc = db.preprocessing_doc(concat_qa)
-    take_sim = db.most_sim(concat_qa, pre_dc)
-    print(take_sim)
+#if __name__ == "__main__":
+#    db = RetrieveData()
+#    db.connect()
+#    db.user_input = "what is programming"
+#    ques_ret = db.retrieve_questions()
+#    ans_ret = db.retrieve_answers()
+#    db.close()
+#    concat_qa = db.concat(ques_ret, ans_ret)
+#    pre_dc = db.preprocessing_doc(concat_qa)
+#    take_sim = db.most_sim(concat_qa, pre_dc)
+#   print(take_sim)
 

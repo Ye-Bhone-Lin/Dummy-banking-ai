@@ -43,17 +43,17 @@ class RefactorModel():
 
         return result.choices[0].message.content
     
-if __name__ == "__main__":
-    db = RetrieveData()
-    db.connect()
-    db.user_input = "How to login to banking account"
-    ques_ret = db.retrieve_questions()
-    ans_ret = db.retrieve_answers()
-    db.close()
-    concat_qa = db.concat(ques_ret, ans_ret)
-    pre_dc = db.preprocessing_doc(concat_qa)
-    take_sim = db.most_sim(concat_qa, pre_dc)
+#if __name__ == "__main__":
+#    db = RetrieveData()
+#    db.connect()
+#    db.user_input = "How to login to banking account"
+#    ques_ret = db.retrieve_questions()
+#    ans_ret = db.retrieve_answers()
+#    db.close()
+#    concat_qa = db.concat(ques_ret, ans_ret)
+#    pre_dc = db.preprocessing_doc(concat_qa)
+#    take_sim = db.most_sim(concat_qa, pre_dc)
 
-    model = RefactorModel()
-    result_work = model.model_work(take_sim)
-    print(result_work)
+#   model = RefactorModel()
+#    result_work = model.model_work(take_sim)
+#    print(result_work)
