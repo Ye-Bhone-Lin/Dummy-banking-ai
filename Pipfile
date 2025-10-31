@@ -4,8 +4,29 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pytesseract = "*"
+matplotlib = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+python-multipart = "*"
+sentry-sdk = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
+gensim = "*"
+nltk = "*"
+groq = "*"
+dotenv = "*"
+mlflow = "==2.14.0"
+grpcio = "==1.75.1"
+click = "*"
+exceptiongroup = "*"
+mediapipe = "==0.10.13"
+openai = "*"
+sentence-transformers = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.11"
